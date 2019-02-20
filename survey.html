@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            Survey 
+        </title>
+        <link rel="stylesheet" href="survey.css">
+        <link href="https://fonts.googleapis.com/css?family=Audiowide|Bangers|Bree+Serif|Roboto+Slab" rel="stylesheet">
+        <script src="survey.js"></script>
+    </head>
+    <body>
+        <div>
+            <ul class="navbar">
+                <li class="active" id="act"><a href=#>RACONTEUR</a></li>
+                <li class="about"><a href=#>About</a></li>
+                <li class="signin" id="signin"><a href=#>Sign In</a></li>
+              </ul>
+        </div>
+        <div class="row">
+        <div class="col-1" ></div>
+        <div class="input1 col-10" id="master">
+            <form action="post">
+                            <h1>Welcome to RACONTEUR</h1>
+                            <p>Create an account </p>
+                            <hr>
+                            <div class="row">
+                                <div class="col-25">
+                                <label for="fname">First Name:</label>
+                                    </div><div class="col-75">
+                                <input  type="text" placeholder="First Name" required>
+                                        </div>
+                                    </div>
+                            <div class="row">  
+                                <div class="col-25">
+                                <label for="fname">Last Name:</label>
+                                    </div><div class="col-75">
+                                <input  type="text" placeholder="Last Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">  
+                                            <div class="col-25">
+                                            <label for="fname">Location:</label>
+                                                </div><div class="col-75">
+                                            <input  type="text" placeholder="Location" >
+                                                    </div>
+                                                </div>
+                            <div class="row">  
+                                <div class="col-25">
+                                <label for="fname">E-mail:</label>
+                                    </div><div class="col-75">
+                                <input  type="email" placeholder="E-mail" required>
+                                        </div>
+                                    </div>
+                            <div class="row">  
+                                <div class="col-25">
+                                <label for="fname">Phone Number:</label>
+                                    </div><div class="col-75">
+                                <input  type="tel" placeholder="Phone Number"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required >
+                                <span class="note">Format: 123-456-7890</span>
+                                        </div>
+                                    </div>
+                            <div class="row">  
+                                <div class="col-25">
+                                <label for="fname">Date of Birth:</label>
+                                    </div><div class="col-75">
+                                <input type="date" name="bday" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                            <div class="col-25">
+                                            <label >Gender:</label>
+                                        </div>
+                                        <div class="col-75">
+                                        <label class="container" name="gender" >Male
+                                                <input type="checkbox" id="male" onclick="document.getElementById('female').checked = false" checked="checked">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                              <label class="container" name="gender" >Female
+                                                <input type="checkbox" id="female" onclick="document.getElementById('male').checked = false">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                            </div>
+                                            </div>
+                            <div class="row">  
+                                    <div class="col-25">
+                                    <label for="fname">Security Question:</label>
+                                        </div><div class="col-75">
+                                            <div class="custom-select">
+                            <select>
+                                <option value="1">What was your childhood nickname? </option>
+                                <option value="2">In what city did you meet your spouse/significant other?</option>
+                                <option value="3">What is the name of your favorite childhood friend? </option>
+                                <option value="4">What street did you live on in third grade?</option>
+                                <option value="5">What is your oldest sibling’s birthday month and year? (e.g., January 1900) </option>
+                                <option value="6">What is the middle name of your youngest child?</option>
+                                <option value="7">What is your oldest sibling's middle name?</option>
+                                <option value="8">What school did you attend for sixth grade?</option>
+                                <option value="9">What was your childhood phone number including area code? (e.g., 000-000-0000)</option>
+                                <option value="10">What is your oldest cousin's first and last name?</option>
+                                <option value="11">What was the name of your first stuffed animal?</option>
+                                <option value="12">In what city or town did your mother and father meet? </option>
+                                <option value="13">Where were you when you had your first kiss? </option>
+                                <option value="14">What is the first name of the boy or girl that you first kissed?</option>
+                                <option value="15">What was the last name of your third grade teacher?</option>
+                                <option value="16">In what city does your nearest sibling live? </option>
+                                <option value="17">What is your youngest brother’s birthday month and year? (e.g., January 1900) </option>
+                                <option value="18">What is your maternal grandmother's maiden name?</option>
+                          
+                            </select>
+                            </div>
+                            </div>
+                            </div>
+                            <br>
+                        
+                                <div class="row">  
+                                        <div class="col-25">
+                                        <label for="fname">Any Thoughts:</label>
+                                            </div><div class="col-75">
+                                        <textarea>Some Text.....</textarea>
+                                                </div>
+                                            </div>
+                                            <br><br>
+                                            <label class="container"> I understand, accept and agree to comply with all terms and conditions
+                                                    <input type="checkbox" checked="checked" required>
+                                                    <span class="checkmarkk"></span>
+                                                  </label>
+                                    <div class="middle">
+                                <button type="submit" class="button"><span><strong>SUBMIT </strong></span></button>
+                                <button type="reset" class="button" id="resetcolor"><span><strong>RESET </strong></span></button>
+                            </div>
+            </form>
+
+        </div>
+    </div>
+        <script src="survey.js"></script>
+    </body>
+</html>
